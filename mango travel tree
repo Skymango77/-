@@ -1,0 +1,23 @@
+# 🥭 Mango Travel Integrated Project Tree
+
+mango/
+├── assets/                          # 물리적 자산 저장소 (운영 관리용)
+│   ├── sounds/                      # 알림음 (mango-alert.mp3, mango-order.mp3 등)
+│   └── images/                      # 메뉴판, 프로모션, 로고 이미지
+├── travel/                          # 여행 관련 전체 프로젝트 비즈니스 로직
+│   ├── admin-panel/                 # [관리자] 여행사/매장 관리용 웹 대시보드
+│   │   └── dashboard.jsx            # 어제 작업한 관리 콘솔
+│   └── projects/
+│       └── travel-system/
+│           └── client-app/          # [고객] 모바일 뷰어 및 서비스 인터페이스
+│               └── travel_viewer.jsx # 지금 작업 중인 고객 전용 뷰어
+├── src/                             # 핵심 기능별 소스 코드 분리
+│   ├── frontend/                    # 웹 기반 서비스 공통 로직
+│   │   ├── admin/                   # [관리 기능] 파일 업로드/삭제 및 데이터 관리
+│   │   └── client/                  # [사용자 기능] 일반 웹/모바일 인터페이스 로직
+│   └── ar-glass/                    # [AR 전용] 글래스 시각화 및 센서 연동 (Vuzix/Android)
+├── docs/                            # 문서화 자료
+│   ├── admin_dashboard_specs.md     # 관리자 대시보드 기획서
+│   └── audio_assets_plan.md         # 음성 자산 리스트 및 가이드
+├── README.md                        # 프로젝트 개요 및 실행 가이드
+└── .gitignore                       # 불필요한 파일 제외 설정
